@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import css from "./movieItem.module.css";
 
@@ -15,6 +16,10 @@ const MovieItem = ({ data: { movieId, poster_path, title, vote_average } }) => {
       </div>
     </Link>
   );
+};
+
+MovieItem.propTypes = {
+  data: PropTypes.object,
 };
 
 export default MovieItem;

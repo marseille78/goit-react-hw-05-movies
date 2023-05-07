@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import MovieItem from '../movieItem';
 import Loader from '../loader';
 import Button from '../button';
@@ -58,6 +59,10 @@ const ListMovies = ({ handler }) => {
       { btnLoadMore }
     </>
   );
+};
+
+ListMovies.propTypes = {
+  handler: PropTypes.func,
 };
 
 export default ListMovies;
