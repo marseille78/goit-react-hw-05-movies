@@ -1,3 +1,14 @@
+:root {
+  /* Colors */
+  --gray: #888;
+  --dark: #313131;
+  --red: tomato;
+
+  /* Other */
+  --gatter: 20px;
+  --anim: 300ms ease-in-out;
+}
+
 @import-normalize; /* bring in normalize.css styles */
 
 body {
@@ -12,4 +23,24 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.main {
+  padding-bottom: var(--gatter);
+}
+
+.listMovies {
+  display: flex;
+  flex-wrap: wrap;
 }

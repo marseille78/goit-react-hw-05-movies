@@ -1,0 +1,36 @@
+.box {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.item {
+  box-shadow: 0 0 2px rgba(0, 0, 0, .6);
+  border-radius: 8px;
+  padding: var(--gatter);
+  display: flex;
+}
+.item:not(:last-child) {
+  margin-bottom: var(--gatter);
+}
+.avatar {
+  width: 100px;
+  min-width: 100px;
+  margin-right: var(--gatter);
+}
+.avatar img {
+  width: 100px;
+  height: auto;
+  border-radius: 4px;
+}
+.body h3 {
+  margin-top: 0;
+}
+.details {
+  font-style: italic;
+}
+.details span {
+  display: block;
+}
+.content {
+  margin-bottom: var(--gatter);
+}
